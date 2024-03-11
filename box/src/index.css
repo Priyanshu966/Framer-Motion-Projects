@@ -1,0 +1,28 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.main {
+  padding: 60px 0px;
+}
+ul {
+  list-style-type: none;
+}
+
+.box {
+  width: 180px;
+  height: 180px;
+  margin: 0px 100px 100px 100px;
+  display: grid;
+  gap: 15px;
+  place-content: center;
+  background-color: cadetblue;
+}
+.list-item {
+  width: 35px;
+  height: 35px;
+
+  background-color: white;
+}
