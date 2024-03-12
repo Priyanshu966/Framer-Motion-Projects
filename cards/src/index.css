@@ -1,0 +1,32 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.main {
+  padding: 60px 0px;
+}
+ul {
+  list-style-type: none;
+}
+.card-cont {
+  width: fit-content;
+  display: grid;
+  grid-template-columns: auto auto auto;
+  gap: 5px;
+  padding: 10px 10px;
+}
+.card {
+  width: 150px;
+  height: 100px;
+  background-color: purple;
+  border-radius: 5px;
+  text-transform: capitalize;
+  padding: 15px 10px;
+  color: white;
+}
+.card h2 {
+  font-size: 20px;
+  margin-bottom: 5px;
+}
