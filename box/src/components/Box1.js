@@ -10,7 +10,9 @@ const Box1 = () => {
         onClick={() => setIsAnimate(!isAnimate)}
         initial={{opacity: 0.5}}
         animate={
-          isAnimate ? {x: 800, rotate: 270, transition: {duration: 0.5}} : {}
+          isAnimate
+            ? {x: 800, rotate: 270, opacity: 1, transition: {duration: 0.5}}
+            : {}
         }
       ></motion.div>
     </div>

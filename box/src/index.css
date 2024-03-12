@@ -26,3 +26,14 @@ ul {
 
   background-color: white;
 }
+.btn-container {
+  padding: 50px 20px 30px 40px;
+}
+.btn {
+  background-color: brown;
+  width: 150px;
+  height: 30px;
+  margin: 0px 5px;
+  border: none;
+  text-transform: capitalize;
+}

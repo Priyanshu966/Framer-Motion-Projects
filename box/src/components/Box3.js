@@ -7,6 +7,8 @@ const Box3 = () => {
         className="box"
         drag
         dragConstraints={{left: 0, right: 600, top: -40, bottom: 40}}
+        whileHover={{cursor: "grab"}}
+        whileTap={{cursor: "grabbing"}}
       ></motion.div>
     </div>
   );
