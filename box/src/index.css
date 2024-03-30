@@ -5,7 +5,7 @@
 }
 
 .main {
-  padding: 60px 0px;
+  padding: 60px 0px 400px 0px;
 }
 ul {
   list-style-type: none;
@@ -27,7 +27,7 @@ ul {
   background-color: white;
 }
 .btn-container {
-  padding: 50px 20px 30px 40px;
+  padding: 150px 20px 30px 40px;
 }
 .btn {
   background-color: brown;
@@ -36,4 +36,12 @@ ul {
   margin: 0px 5px;
   border: none;
   text-transform: capitalize;
+}
+.box-container2 {
+  padding: 0px 100px;
+  display: grid;
+  place-items: center;
+  width: fit-content;
+  border: 2px solid black;
+  height: 250px;
 }

@@ -4,5 +4,6 @@ import Box3 from "./Box3";
 import Box4 from "./Box4";
 import Box5 from "./Box5";
 import Box6 from "./Box6";
+import Box7 from "./Box7";
 
-export {Box1, Box2, Box3, Box4, Box5,Box6};
+export default [Box1, Box2, Box3, Box4, Box5,Box6,Box7];
