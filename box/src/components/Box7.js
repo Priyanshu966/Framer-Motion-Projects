@@ -4,11 +4,16 @@ import {useState} from "react";
 const Box7 = () => {
   const [isVisible, setIsVisible] = useState(true);
   return (
-    <div className="box-container2">
-      <motion.button layout layout className="btn" onClick={() => setIsVisible(!isVisible)}>
+    <motion.div className="box-container2">
+      <motion.button
+        layout
+        transition={{layout: {duration: 0.5, type: "spring"}}}
+        className="btn"
+        onClick={() => setIsVisible(!isVisible)}
+      >
         hide
       </motion.button>
-      <AnimatePresence>
+      <AnimatePresence mode="popLayout">
         {isVisible && (
           <motion.div
             initial={{scale: 0, y: 0, rotate: "0deg"}}
@@ -24,7 +29,7 @@ const Box7 = () => {
           ></motion.div>
         )}
       </AnimatePresence>
-    </div>
+    </motion.div>
   );
 };
 export default Box7;

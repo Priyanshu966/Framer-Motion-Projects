@@ -39,9 +39,9 @@ ul {
 }
 .box-container2 {
   padding: 0px 100px;
+  margin-bottom: 100px;
   display: grid;
   place-items: center;
   width: fit-content;
-  border: 2px solid black;
   height: 250px;
 }
