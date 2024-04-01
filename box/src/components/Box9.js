@@ -5,9 +5,7 @@ const Box9 = () => {
   const ref = useRef(null);
   const isInView = useInView(ref);
 
-  useEffect(() => {
-    console.log(isInView);
-  }, [isInView]);
+
   return (
     <div className="box-container">
       <motion.div
