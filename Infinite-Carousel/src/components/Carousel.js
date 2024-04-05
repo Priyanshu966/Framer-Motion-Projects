@@ -12,6 +12,7 @@ const Carousel = () => {
     if (newIndex >= images.length) {
       newIndex = 0;
     }
+
     setIsImage({index: newIndex, direction: dir});
   };
   const handlePrev = (dir) => {
@@ -19,6 +20,7 @@ const Carousel = () => {
     if (newIndex < 0) {
       newIndex = images.length - 1;
     }
+
     setIsImage({index: newIndex, direction: dir});
   };
 
@@ -61,6 +63,12 @@ const Carousel = () => {
       };
     },
   };
+
+  const swipeConfidenceThreshold = 10000;
+  const swipePower = (offset, velocity) => {
+    return Math.abs(offset) * velocity;
+  };
+
   return (
     <div className="w-[500px] h-[300px] relative overflow-hidden">
       <AnimatePresence initial={false} custom={direction}>
@@ -75,6 +83,18 @@ const Carousel = () => {
           transition={{
             x: {type: "spring", stiffness: 300, damping: 30},
             opacity: {duration: 0.2},
+          }}
+          drag="x"
+          dragConstraints={{left: 0, right: 0}}
+          dragElastic={1}
+          onDragEnd={(e, {offset, velocity}) => {
+            const swipe = swipePower(offset.x, velocity.x);
+
+            if (swipe < -swipeConfidenceThreshold) {
+              handleNext(1);
+            } else if (swipe > swipeConfidenceThreshold) {
+              handlePrev(-1);
+            }
           }}
           className="w-full h-[100%] absolute left-0 top-0"
         />
