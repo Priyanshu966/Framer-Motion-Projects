@@ -1,0 +1,15 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.card-shadow {
+  -webkit-box-shadow: 22px 33px 37px -1px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 22px 33px 37px -1px rgba(0, 0, 0, 0.75);
+  box-shadow: 22px 33px 37px -1px rgba(0, 0, 0, 0.75);
+}
