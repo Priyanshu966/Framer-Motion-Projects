@@ -1,0 +1,47 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.main {
+  padding: 60px 0px 400px 0px;
+}
+ul {
+  list-style-type: none;
+}
+
+.box {
+  width: 180px;
+  height: 180px;
+  margin: 0px 100px 100px 100px;
+  display: grid;
+  gap: 15px;
+  place-content: center;
+  background-color: cadetblue;
+}
+.list-item {
+  width: 35px;
+  height: 35px;
+
+  background-color: white;
+}
+.btn-container {
+  padding: 150px 20px 30px 40px;
+}
+.btn {
+  background-color: brown;
+  width: 150px;
+  height: 30px;
+  margin: 0px 5px;
+  border: none;
+  text-transform: capitalize;
+}
+.box-container2 {
+  padding: 0px 100px;
+  margin-bottom: 100px;
+  display: grid;
+  place-items: center;
+  width: fit-content;
+  height: 250px;
+}
