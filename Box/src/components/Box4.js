@@ -25,9 +25,13 @@ const Box4 = () => {
         initial="hidden"
         animate="visible"
       >
-        {[1, 2, 3].map(() => {
+        {[1, 2, 3].map((index) => {
           return (
-            <motion.li className="list-item" variants={listVariant}></motion.li>
+            <motion.li
+              key={index}
+              className="list-item"
+              variants={listVariant}
+            ></motion.li>
           );
         })}
       </motion.ul>

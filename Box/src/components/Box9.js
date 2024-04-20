@@ -5,7 +5,6 @@ const Box9 = () => {
   const ref = useRef(null);
   const isInView = useInView(ref);
 
-
   return (
     <div className="box-container">
       <motion.div
@@ -16,8 +15,8 @@ const Box9 = () => {
           transition: "5s background",
         }}
         initial={{opacity: 0}}
-        whileInView={{opacity: 1}}
-        transition={{duration: 1}}
+        whileInView={{opacity: 1, transition: {duration: 1}}}
+        viewport={{amount: 1}}
       ></motion.div>
     </div>
   );
