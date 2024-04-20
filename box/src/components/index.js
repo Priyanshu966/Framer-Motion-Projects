@@ -9,9 +9,12 @@ import Box8 from "./Box8";
 import Box9 from "./Box9";
 import Box10 from "./Box10";
 import Box11 from "./Box11";
+import Box12 from "./Box12";
 import Scroll from "./Scroll";
+import Template from "./Template";
 
 export default [
+  Template,
   Scroll,
   Box1,
   Box2,
@@ -24,4 +27,5 @@ export default [
   Box9,
   Box10,
   Box11,
+  Box12,
 ];

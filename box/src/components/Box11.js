@@ -4,6 +4,7 @@ import {
   useMotionValue,
   useTransform,
 } from "framer-motion";
+import Template from "./Template";
 
 const Box11 = () => {
   const x = useMotionValue(0);
@@ -24,7 +25,9 @@ const Box11 = () => {
         whileHover={{cursor: "grab"}}
         whileTap={{cursor: "grabbing"}}
         style={{x, backgroundImage}}
-      ></motion.div>
+      >
+        <Template msg="drag me left and right" />
+      </motion.div>
     </div>
   );
 };
