@@ -9,19 +9,20 @@ const Card = () => {
     initial: {scale: 1},
     hover: {
       scale: 1.1,
-      transition: {
-        duration: 0.5,
-        ease: "easeInOut",
-        type: "spring",
-        bounce: 0.5,
-      },
     },
   };
+ 
   return (
     <motion.div
       variants={cardVariants}
       initial="initial"
       whileHover="hover"
+      transition={{
+        duration: 1,
+        ease: "easeInOut",
+        type: "spring",
+        bounce: 0.5,
+      }}
       className="w-[240px] h-[300px] border-2 border-black rounded-lg bg-blue-600 px-3 py-4 grid relative z-10 overflow-hidden"
     >
       <Price />

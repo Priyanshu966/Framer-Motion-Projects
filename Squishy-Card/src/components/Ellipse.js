@@ -15,7 +15,7 @@ const Ellipse = () => {
         hover: {scale: 1.4},
       }}
       transition={{duration: 1, ease: "backInOut"}}
-      className="z-0 absolute w-full inset-0"
+      className="z-0 absolute w-full inset-0 overflow-visible"
     >
       <motion.path
         variants={{hover: {scaleY: 0.54, scaleX: 0.75, y: -25}}}
