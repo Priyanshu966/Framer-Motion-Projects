@@ -1,17 +1,16 @@
 import {motion} from "framer-motion";
 import PrimaryBtn from "./PrimaryBtn";
 import Price from "./Price";
-import Ellipse from "./Ellipse";
-import {easeInOut} from "framer-motion/dom";
+import Rect from "./Rect";
 
-const Card = () => {
+const RectCard = () => {
   const cardVariants = {
     initial: {scale: 1},
     hover: {
       scale: 1.1,
     },
   };
- 
+
   return (
     <motion.div
       variants={cardVariants}
@@ -27,8 +26,8 @@ const Card = () => {
     >
       <Price />
       <PrimaryBtn />
-      <Ellipse />
+      <Rect />
     </motion.div>
   );
 };
-export default Card;
+export default RectCard;

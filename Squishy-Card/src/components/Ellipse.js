@@ -1,9 +1,7 @@
 import {motion} from "framer-motion";
 
 const Ellipse = () => {
-  const ellipseVariants = {
-    hover: {scale: 1.5},
-  };
+
   return (
     <motion.svg
       width="210"
