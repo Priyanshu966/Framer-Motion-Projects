@@ -8,9 +8,7 @@ const Rect = () => {
       viewBox="0 0 240 300"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
-      className="absolute top-0 left-0 z-0"
-      variants={{hover: {scale: 1}}}
-      transition={{duration: 1, ease: "backInOut"}}
+      className="absolute inset-0 z-0"
     >
       <motion.rect
         x="14"
@@ -20,9 +18,15 @@ const Rect = () => {
         rx="15"
         fill="black"
         variants={{
-          hover: {y: 170, x: 20, scaleX: 2.2, scaleY: 1},
+          initial: {y: 0, x: 0},
+          hover: {
+            scaleX: 2,
+            scaleY: 1.1,
+            translateY: 164,
+            translateX: 0,
+          },
         }}
-        transition={{duration: 1, ease: "backInOut", type: "spring"}}
+        transition={{duration: 1.3, ease: "backInOut", type: "spring"}}
         className="origin-left"
       />
       <motion.rect
@@ -33,9 +37,15 @@ const Rect = () => {
         rx="15"
         fill="black"
         variants={{
-          hover: {y: -170, x: -30, scaleX: 2.2, scaleY: 1},
+          initial: {translateY: 0, translateX: 0},
+          hover: {
+            scaleX: 2,
+            scaleY: 1.1,
+            translateY: -170,
+            translateX: 0,
+          },
         }}
-        transition={{duration: 1, ease: "easeInOut", type: "spring"}}
+        transition={{duration: 1.3, ease: "easeInOut", type: "spring"}}
         className="origin-right"
       />
     </motion.svg>
