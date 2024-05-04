@@ -1,16 +1,16 @@
 import {motion} from "framer-motion";
 import PrimaryBtn from "./PrimaryBtn";
 import Price from "./Price";
-import RectBackground from "./RectBackground";
+import EllipseBackground from "./EllipseBackground";
 
-const RectCard = () => {
+const EllipseCard = () => {
   const cardVariants = {
     initial: {scale: 1},
     hover: {
       scale: 1.1,
     },
   };
-
+ 
   return (
     <motion.div
       variants={cardVariants}
@@ -26,8 +26,8 @@ const RectCard = () => {
     >
       <Price />
       <PrimaryBtn />
-      <RectBackground />
+      <EllipseBackground />
     </motion.div>
   );
 };
-export default RectCard;
+export default EllipseCard;

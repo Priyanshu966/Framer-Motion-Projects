@@ -1,11 +1,13 @@
-import Card from "./components/Card";
+import EllipseCard from "./components/EllipseCard";
 import RectCard from "./components/RectCard";
+import DiamondCard from "./components/DiamondCard";
 
 function App() {
   return (
     <div className="w-screen min-h-screen bg-gray-950 flex justify-center items-center flex-col space-y-10 ">
-      <Card />
+      <EllipseCard />
       <RectCard />
+      <DiamondCard />
     </div>
   );
 }

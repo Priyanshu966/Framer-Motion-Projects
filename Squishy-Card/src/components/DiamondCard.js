@@ -1,9 +1,9 @@
 import {motion} from "framer-motion";
 import PrimaryBtn from "./PrimaryBtn";
 import Price from "./Price";
-import RectBackground from "./RectBackground";
+import DiamondBackground from "./DiamondBackground";
 
-const RectCard = () => {
+const DiamondCard = () => {
   const cardVariants = {
     initial: {scale: 1},
     hover: {
@@ -17,8 +17,8 @@ const RectCard = () => {
       initial="initial"
       whileHover="hover"
       transition={{
-        duration: 1,
-        ease: "easeInOut",
+        duration: 1.5,
+        ease: "backInOut",
         type: "spring",
         bounce: 0.5,
       }}
@@ -26,8 +26,8 @@ const RectCard = () => {
     >
       <Price />
       <PrimaryBtn />
-      <RectBackground />
+      <DiamondBackground />
     </motion.div>
   );
 };
-export default RectCard;
+export default DiamondCard;
